@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Black+Ops+One&family=Press+Start+2P&family=Rubik+Doodle+Shadow&display=swap');
+
+#imagen_pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('images/fondo.png');
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#titulo {
+    margin-top: 3%;
+    font-weight: 400;
+    color: rgba(112, 138, 253, 0.918);
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    margin-left: 25%;
+    font-size: 600%;
+    font-family: 'Pokemon Solid', sans-serif;
+    margin-bottom: 5%;
+
+}
+
+#card {
+    margin-top: 2%;
+    margin-left: 20%;
+    display: none;
+    font-family: "Press Start 2P", system-ui;
+    background-color: #adaeaf;
+}
+
+#errorT {
+    display: none;
+}
+
+#textoError {
+    font-family: "Armata", sans-serif;
+    font-weight: 400;
+    font-size: 150%;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    margin-top: 2%;
+}
+
+#tabla {
+    margin-top: 60%;
+    margin-left: 0%;
+    display: none;
+    font-family: "Press Start 2P", system-ui;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="icon" href="css/images/icono.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/artyom.window.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="divTitulo">
+            <h1 id="titulo">
+                POKESEARCH</h1>
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar Pokemon" aria-label="Recipient's username with two button addons" id="input">
+                <button class="btn btn-outline-secondary" type="button" id="botonVoz">Voz</button>
+                <button class="btn btn-outline-secondary" type="button" id="botonBuscar">Buscar</button>
+              </div>
+
+        </div>
+        <div id="errorT">
+            <h1 id="textoError">NO SE HA ENCONTRADO EL POKEMON</h1>
+        </div>
+        <div class="row" id="error"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem;" id="card">
+                        <div id="imagen_pokemon"></div>
+                        <div class="card-body">
+                            <div id="nombre" type="text" class="card-title"></div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="types"></li>
+                            <li class="list-group-item" id="slotsT"></li>
+                            <li class="list-group-item" id="abilities"></li>
+                            <li class="list-group-item" id="slotsA"></li>
+                            <li class="list-group-item" id="items"></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-hover" id="tabla">
+                        <thead>
+                          <tr id="fila">
+                            <th scope="col">STATS</th>
+                            <th scope="col">hp</th>
+                            <th scope="col">attack</th>
+                            <th scope="col">defense</th>
+                            <th scope="col">special defense</th>
+                            <th scope="col">special attack</th>
+                            <th scope="col">speed</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">Base_stats</th>
+                            <td id="hpS"></td>
+                            <td id="attackS"></td>
+                            <td id="defenseS"></td>
+                            <td id="specialDefenseS"></td>
+                            <td id="specialAttackS"></td>
+                            <td id="speedS"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Effort</th>
+                            <td id="hpE"></td>
+                            <td id="attackE"></td>
+                            <td id="defenseE"></td>
+                            <td id="specialDefenseE"></td>
+                            <td id="specialAttackE"></td>
+                            <td id="speedE"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
